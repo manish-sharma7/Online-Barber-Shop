@@ -1,0 +1,207 @@
+<head>
+<title></title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="stil.css">
+<link href='https://fonts.googleapis.com/css?family=Cuprum' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+
+<script>
+
+var brad = {
+
+	name:" Brad ",
+	Phone_number:"987654345678"
+	
+
+}
+</script>
+<style>
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+#page-wrapper {
+  width: 640px;
+  background: #FFFFFF;
+  padding: 1em;
+  margin: 1em auto;
+  border-top: 5px solid #69c773;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.8);
+}
+
+h1 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  color: #999999;
+}
+
+input {
+  width: 100%;
+  padding: 0.5em 0.5em;
+  font-size: 1.2em;
+  border-radius: 3px;
+  border: 1px solid #D9D9D9;
+}
+
+button {
+  display: inline-block;
+  border-radius: 3px;
+  border: none;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.8em;
+  background: #69c773;
+  border-bottom: 1px solid #498b50;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+button:hover, button:focus {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+button:active {
+  opacity: 1;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1) inset;
+}
+
+body { 
+
+background:#34495e;
+}
+
+#profile {
+
+
+margin:auto;
+margin-top:50px;
+height:250px;
+width:400px;
+
+
+
+
+}
+
+
+table { width:642px; height:250px;}
+ 
+table tr td { 
+
+background:white; 
+border:1px solid white;
+height:50px;
+font-family:Cuprum;
+font-size:25px;
+color:#34495e;
+text-align:center;
+}
+
+
+#profile table tr td.image { background-color:#34495e; border:none;}
+#profile table tr td.button { background-color:#34495e; border:none;}
+img { border:2px solid white; height:200px; }
+</style>
+<div id="profile">
+<table>		
+	
+	<tr><td><script>document.write("Name:"," ", brad.name);</script></td></tr>
+		<tr><td><script>document.write("Phone number:"," ", brad.Phone_number);</script></td></tr>
+			
+</table>
+<div id="page-wrapper">
+  <h1>Search by Barber name</h1>
+  
+  <label for="default">Pick a pick a barber name</label>
+  <input type="text" id="default" list="languages" placeholder="">
+  
+  <datalist id="languages">
+    <option value="A">
+    <option value="B">
+    <option value="C">
+    <option value="D">
+  </datalist>
+  
+  <h1>Search by Barber shop name</h1>
+  <label for="ajax">Pick an barber shop name</label>
+  <input type="text" id="ajax" list="shop" placeholder="">
+  <datalist id="shop">
+    <option value="A">
+    <option value="B">
+    <option value="C">
+    <option value="D">
+  </datalist>
+<h1>Search by Barber contact number</h1>
+  <label for="ajax">Pick an barber contact number</label>
+  <input type="text" id="ajax" list="contact" placeholder="">
+  <datalist id="contact">
+    <option value="98765433456">
+    <option value="8434567898">
+    <option value="87569876545">
+    <option value="87654345678">
+  </datalist>
+<br>
+<h1>Please choose your option</h1>
+<select size="4">
+  <option id="Haircutting">Hair Cutting</option>
+  <option id="Shaving">Shaving</option>
+  <option id="Facing">Facing</option>
+  
+</select>
+
+<p>Click the button to return whether the banana option is selected.</p>
+
+<button onclick="myFunction()">Find out price</button>
+
+<p id="demo"></p>
+<button type="submit" value="Submit">Submit</button>
+<script>
+function myFunction() {
+    var x = document.getElementById("Haircutting").selected;
+if(x==true)
+{
+ document.getElementById("demo").innerHTML = "100";
+}
+var y = document.getElementById("Shaving").selected;
+if(y==true)
+{
+ document.getElementById("demo").innerHTML = "70";
+}
+var z = document.getElementById("Facing").selected;
+if(z==true)
+{
+ document.getElementById("demo").innerHTML = "200";
+}
+
+}
+
+   
+
+</script>
+  
+</div>
+
+
+
+</div>
+</body>
+</html>
